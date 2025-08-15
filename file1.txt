@@ -1,0 +1,4 @@
+Hello reader...
+This is a ransomware testing file.
+
+Check on me again after encryption.
