@@ -28,6 +28,21 @@ if user_phrase == secretphrase:
         contents_decrypted = Fernet(secretkey).decrypt(contents)
         with open(file, "wb") as thefile:
             thefile.write(contents_decrypted)
-    print("Files decrypted successfully.")
+    print("\n" + "="*60)
+    print("✅ SUCCESS! YOUR FILES ARE SAFE! ✅")
+    print("="*60)
+    print("""
+███████╗██████╗ ███████╗███████╗██████╗ 
+██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗
+█████╗  ██████╔╝█████╗  █████╗  ██║  ██║
+██╔══╝  ██╔══██╗██╔══╝  ██╔══╝  ██║  ██║
+██║     ██║  ██║███████╗███████╗██████╔╝
+╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝ 
+""")
+    print("🎉 All files have been successfully decrypted! 🎉")
+    print("💚 Your data is now restored and safe!")
+    print("📁 Files recovered:", len(files), "files")
+    print("🔓 Encryption removed completely!")
+    print("="*60)
 else:
     print("Wrong name.")
